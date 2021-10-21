@@ -1,6 +1,20 @@
-- name: React to comment
-  uses: dkershner6/reaction-action@v1
-  with:
-    token: ${{ secrets.GITHUB_TOKEN }}
-    commentId: 1234 # Optional if the trigger is a comment. Use another action to find this otherwise.
-    reaction: "hooray" # Optional, defaults to +1
+name: 'Reaction Comments'
+
+on:
+  issue_comment:
+    types: [created, edited]
+  pull_request_review_comment:
+    types: [created, edited]
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  actions: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/reaction-comments@v2
