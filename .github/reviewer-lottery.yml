@@ -7,9 +7,4 @@ groups:
       - tebs
       - rudeayelo
       - marciobarrios
-
-  - name: qas # you can have multiple groups, it will evaluate them separately
-    reviewers: 1
-    usernames:
-      - some_user
-      - someoneelse
+      
