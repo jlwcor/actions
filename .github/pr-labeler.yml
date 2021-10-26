@@ -1,4 +1,4 @@
 feature: ['feature/*', 'feat/*']
-fix: bugfix/*
+bug fix: bugfix/*
 chore: chore/*
 fixed-branch: fixed-branch-name
