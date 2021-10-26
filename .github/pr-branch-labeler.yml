@@ -1,9 +1,14 @@
-# Apply label "feature" if head matches "feature/*"
-feature:
+# Apply enhancement
+enhancement:
   head: "feature/*"
-
-# Apply label "bugfix" if head matches one of "bugfix/*" or "hotfix/*"
+# Apply bugfix
 bugfix:
-  head: ["bugfix/*", "hotfix/*"]
-Completed QA:
-  head: ["bugfix/*", "hotfix/*"]
+  head: "bugfix/*"
+# Apply hotfix
+hotfix:
+  head: "hotfix/*"
+# Apply review labels
+Needs QA:
+  head: ["feature/*", "bugfix/*", "hotfix/*"]
+Needs Code Review:
+  head: ["feature/*", "bugfix/*", "hotfix/*"]
