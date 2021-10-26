@@ -1,0 +1,6 @@
+feature: ['feature/*', 'feat/*']
+needs code review: ['feature/*', 'feat/*', 'bufix/*']
+Bug fix: bugfix/*:
+fix: fix/*
+chore: chore/*
+fixed-branch: fixed-branch-name
