@@ -5,3 +5,5 @@ feature:
 # Apply label "bugfix" if head matches one of "bugfix/*" or "hotfix/*"
 bugfix:
   head: ["bugfix/*", "hotfix/*"]
+Completed QA:
+  head: ["bugfix/*", "hotfix/*"]
